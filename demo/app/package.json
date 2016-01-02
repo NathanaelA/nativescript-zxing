@@ -1,0 +1,24 @@
+{
+  "name": "demo-zxing",
+  "main": "app.js",
+  "version": "1.0.0",
+  "author": {
+    "name": "Nathanael",
+    "email": "nathanael@master-technology.com"
+  },
+  "description": "Nativescript zxing demo",
+  "license": "Apache-2.0",
+  "keywords": [
+    "zxing",
+    "mobile",
+    "nativescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathanaela/nativescript-zxing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nathanaela/nativescript-zxing/issues"
+  },
+  "homepage": "https://github.com/nathanaela/nativescript-zxing"
+}

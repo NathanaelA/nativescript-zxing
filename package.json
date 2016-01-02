@@ -1,0 +1,32 @@
+{
+  "name": "nativescript-zxing",
+  "version": "1.0.0",
+  "description": "A Simple ZXing barcode reader/writer wrapper",
+  "main": "zxing.js",
+  "nativescript": {
+	"platforms": {
+		"android": "0.0.1",
+        "ios": "0.0.1"
+	}
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanaela/nativescript-zxing.git"
+  },
+  "keywords": [
+    "NativeScript", "Barcode", "Development", "JavaScript", "Android", "iOS", "ZXing"
+  ],
+  "author": {
+    "name": "Nathanael Anderson",
+    "email": "nathan@master-technology.com"
+  },
+  "bugs": {
+    "url": "https://github.com/nathanaela/nativescript-zxing/issues"
+  },
+  "license": {
+    "type": "APACHE",
+    "url": "https://github.com/nathanaela/nativescript-zxing/blob/master/LICENSE"
+  },
+  "homepage": "https://github.com/nathanaela/nativescript-zxing",
+  "readmeFilename": "README.md"
+}

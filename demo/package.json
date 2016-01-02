@@ -1,0 +1,9 @@
+{
+	"nativescript": {
+		"id": "org.nativescript.demo",		
+	},
+	"dependencies": {
+		"nativescript-zxing": "file:..",
+		"tns-core-modules": "1.5.1"
+	}
+}

@@ -1,0 +1,23 @@
+﻿.title {
+    font-size: 20;
+    horizontal-align: center;
+    margin: 20;
+}
+
+.footer {
+    background-color: #A0A0A0;
+    horizontal-align: center;
+}
+
+button {
+    font-size: 22;
+    horizontal-align: center;
+}
+
+image {
+    horizontal-align: center;
+}
+
+.grey {
+    background-color: #A0A0A0;
+}
