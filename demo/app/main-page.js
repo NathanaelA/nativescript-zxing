@@ -10,6 +10,7 @@
 "use strict";
 
 var ZXing = require('nativescript-zxing');
+var imageSource = require('image-source');
 
 var img, txt;
 exports.pageLoaded = function(args) {
@@ -25,5 +26,6 @@ exports.click = function() {
     var text = txt.text || "Demo by Master Technology";
     var newImg = zx.createBarcode({encode: text});
 
-    img._setNativeImage(newImg);
+    img.imageSource = imageSource.fromNativeSource(newImg);
+
 };

@@ -1,6 +1,6 @@
 {
 	"nativescript": {
-		"id": "org.nativescript.demo",		
+		"id": "org.nativescript.demo"
 	},
 	"dependencies": {
 		"nativescript-zxing": "file:..",
