@@ -1,3 +1,5 @@
 .idea
 demo/platforms/
 demo/node_modules/
+*.tar
+*.tgz
