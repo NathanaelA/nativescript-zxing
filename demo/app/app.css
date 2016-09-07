@@ -21,3 +21,7 @@ image {
 .grey {
     background-color: #A0A0A0;
 }
+
+#results {
+    text-align: center;
+}

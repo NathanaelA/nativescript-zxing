@@ -1,13 +1,15 @@
 /*************************************************************************************
  * (c) 2016, Master Technology
+ *
  * Licensed under the APACHE license or contact me for a Support or Commercial License
  *
  * I do contract work in most languages, so let me solve your problems!
  *
  * Any questions please feel free to email me or put a issue up on the github repo
- * Version 0.0.1                                      Nathan@master-technology.com
+ * Version 0.0.3                                      Nathan@master-technology.com
  ************************************************************************************/
 "use strict";
+var application = require('application');
 
 /* global android, com, java, javax, global */
 
@@ -19,8 +21,8 @@ function NativeZXing() {
 }
 
 NativeZXing.prototype.createBarcode = function(options) {
-	var encode="NOTHING", width=100, height=100, format = this.QR_CODE;
-	if (options) {
+    var encode="NOTHING", width=100, height=100, format = this.QR_CODE;
+    if (options) {
         if (options.encode) {
             encode = options.encode;
         }
@@ -49,6 +51,72 @@ NativeZXing.prototype.createBarcode = function(options) {
     var bitmap = android.graphics.Bitmap.createBitmap(width, height, android.graphics.Bitmap.Config.ARGB_8888);
     bitmap.setPixels(pixels, 0, width, 0, 0, width, height);
     return bitmap;
+};
+
+NativeZXing.prototype.decodeBarcode = function(bitmap, options) {
+    if (bitmap === null)
+    {
+        return null;
+    }
+    var width = bitmap.getWidth(), height = bitmap.getHeight();
+    var totalSize = width * height;
+    var buffer = java.lang.reflect.Array.newInstance(java.lang.Integer.class.getField("TYPE").get(null), totalSize);
+
+    bitmap.getPixels(buffer, 0, width, 0, 0, width, height);
+
+    var source = new com.google.zxing.RGBLuminanceSource(width, height, buffer);
+    var hybBitmap = new com.google.zxing.BinaryBitmap(new com.google.zxing.common.HybridBinarizer(source));
+    source = null; buffer = null;
+    var hints = null;
+
+    if (options && options.formats) {
+        var decodeFormats = new java.util.Vector();
+        for (var i=0;i<options.formats.length;i++) {
+            decodeFormats.add(options.formats[i]);
+        }
+
+        if (!hints) {
+            hints = new java.util.Hashtable();
+            hints.put(com.google.zxing.DecodeHintType.POSSIBLE_FORMATS, decodeFormats);
+        }
+    }
+
+    if (options && options.tryHarder) {
+        if (!hints) {
+            hints = new java.util.Hashtable();
+            hints.put(com.google.zxing.DecodeHintType.TRY_HARDER,  java.lang.Boolean.TRUE);
+        }
+    }
+
+    if (options && options.characterSet) {
+        if (!hints) {
+            hints = new java.util.Hashtable();
+            hints.put(com.google.zxing.DecodeHintType.CHARACTER_SET, options.characterSet);
+        }
+    }
+
+
+    var reader = new com.google.zxing.MultiFormatReader();
+    try
+    {
+        if (hints) {
+            reader.setHints(hints);
+        }
+        var results = {};
+        var result = reader.decode(hybBitmap);
+        hybBitmap = null;
+
+        results.format = result.getBarcodeFormat().toString();
+        results.barcode = result.getText();
+
+        return results;
+    }
+    catch (err)
+    {
+        // console.log(err);
+    }
+    return null;
+
 };
 
 

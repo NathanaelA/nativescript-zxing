@@ -1,9 +1,17 @@
 {
-	"nativescript": {
-		"id": "org.nativescript.demo"
-	},
-	"dependencies": {
-		"nativescript-zxing": "file:..",
-		"tns-core-modules": "1.5.1"
-	}
+  "nativescript": {
+    "id": "org.nativescript.demo"
+  },
+  "dependencies": {
+    "nativescript-dom": "^1.0.6",
+    "nativescript-imagepicker": "0.0.6",
+    "nativescript-zxing": "file:..",
+    "tns-core-modules": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.15.0",
+    "babel-types": "6.15.0",
+    "babylon": "6.9.1",
+    "lazy": "1.0.11"
+  }
 }
