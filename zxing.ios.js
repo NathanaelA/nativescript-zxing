@@ -1,7 +1,7 @@
 /**********************************************************************************
  * (c) 2016, Master Technology
  *
- * Licensed under the MIT license or contact me for a Support or Commercial License
+ * Licensed under the APACHE license or contact me for a Support or Commercial License
  *
  * I do contract work in most languages, so let me solve your problems!
  *

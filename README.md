@@ -61,7 +61,7 @@ If you do pass in the valid formats; the iOS side actually will ONLY use the for
 The source image for Android must be a bitmap; the source image for iOS must be a CGImage. (See Demo)
  
  
- ## Demo
+## Demo
  
  Please see the demo source [http://github.com/NathanaelA/nativescript-zxing/demo](http://github.com/NathanaelA/nativescript-zxing/demo) for how to read, write and convert between image formats.
  In addition when you SAVE on Android it might take a few minutes before the media indexer will actually see the new image to put it in the image picker.
