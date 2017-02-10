@@ -1,8 +1,8 @@
 {
   "name": "nativescript-zxing",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A Simple ZXing barcode reader/writer wrapper",
-  "main": "zxing.js",
+  "main": "zxing",
   "nativescript": {
 	"platforms": {
 		"android": "2.0.0",
