@@ -1,12 +1,18 @@
 {
   "name": "nativescript-zxing",
-  "version": "1.5.1",
-  "description": "A Simple ZXing barcode reader/writer wrapper",
+  "version": "1.5.2",
+  "description": "A Simple ZXing barcode reader/writer",
   "main": "zxing",
   "nativescript": {
 	"platforms": {
 		"android": "2.0.0",
         "ios": "2.0.0"
+	},
+	"plugin": {
+	  "nan": "true",
+	  "pan": "true",
+	  "core3": "true",
+	  "category": "Processing"
 	}
   },
   "repository": {

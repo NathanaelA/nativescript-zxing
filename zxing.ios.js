@@ -1,12 +1,12 @@
 /**********************************************************************************
- * (c) 2016, Master Technology
+ * (c) 2016-2017, Master Technology
  *
  * Licensed under the APACHE license or contact me for a Support or Commercial License
  *
  * I do contract work in most languages, so let me solve your problems!
  *
  * Any questions please feel free to email me or put a issue up on the github repo
- * Version 0.0.3                                      Nathan@master-technology.com
+ * Version 0.0.4                                      Nathan@master-technology.com
  *********************************************************************************/
 "use strict";
 
@@ -31,7 +31,7 @@ NativeZXing.prototype.createBarcode = function(options) {
         if (options.height) {
             height = options.height;
         }
-        if (options.format) {
+        if (typeof options.format !== "undefined") {
             format = options.format;
         }
     }
