@@ -87,3 +87,10 @@ ZXing supports the following Barcode types:
 * PDF_417
 
 
+## Incompatibility
+If you are using nativescript-barcodescanner these two plugins conflict because they use the same library to do the barcode work.  The NativeScript tool unfortunately is not smart enough to detect this, and so you will get a weird error during the build.
+  
+The easiest fix if you want to use both of them is to open up where the plugin was installed (node_modules/nativescript-zxing) and then delete the platforms/android folder inside my plugin.
+
+My code will then automatically use the version of zxing that nativescript-barcodescanner has included in it.
+
