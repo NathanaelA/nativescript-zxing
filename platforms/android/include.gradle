@@ -1,4 +1,4 @@
-android { 
+android {
     productFlavors {
         "nativescript-zxing" {
             dimension "nativescript-zxing"
@@ -7,6 +7,6 @@ android {
 }
 
 dependencies {
-	compile 'com.google.zxing:android-core:3.2.1'
-	compile 'com.google.zxing:core:3.2.1'	
+	compile 'com.google.zxing:android-core:3.3.0'
+	compile 'com.google.zxing:core:3.3.2'
 }
