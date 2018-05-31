@@ -16,7 +16,7 @@ I also do contract work; so if you have a module you want built or sponsored for
 [![Patreon](https://img.shields.io/badge/Pledge-Patreon-brightgreen.svg?style=plastic)](https://www.patreon.com/NathanaelA)
 
 ## Installation 
-Same plugin works on both NativeScript 2.x and 3.x 
+Same plugin works on  NativeScript 2.x - 4.x
 
 Run `tns plugin add nativescript-zxing` in your ROOT directory of your project.
 

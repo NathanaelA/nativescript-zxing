@@ -1,6 +1,6 @@
 {
   "name": "nativescript-zxing",
-  "version": "1.5.3",
+  "version": "1.5.5",
   "description": "A Simple ZXing barcode reader/writer",
   "main": "zxing",
   "nativescript": {
