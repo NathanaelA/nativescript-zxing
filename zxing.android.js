@@ -36,7 +36,11 @@ NativeZXing.prototype.createBarcode = function(options) {
             format = options.format;
         }
     }
-    var hints = null;
+
+    var hints = new java.util.Hashtable();
+    var characterset = com.google.zxing.EncodeHintType.CHARACTER_SET;
+    hints.put(characterset, "utf-8");
+
     var writer = new com.google.zxing.MultiFormatWriter();
     var result = writer.encode(encode, format, width, height, hints);
     width = result.getWidth();
