@@ -20,6 +20,8 @@ Same plugin works on  NativeScript 2.x - 4.x
 
 Run `tns plugin add nativescript-zxing` in your ROOT directory of your project.
 
+## Demo
+Node: The demo is written to use ImagePicker v6.x; earlier versions will return the results differently and then the demo will fail to run.  
 
 ## Usage
 
