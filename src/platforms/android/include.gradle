@@ -1,5 +1,9 @@
 android {
-    
+    productFlavors {
+        "nativescript-zxing" {
+            dimension "nativescript-zxing"
+		}
+    }
 }
 
 dependencies {
