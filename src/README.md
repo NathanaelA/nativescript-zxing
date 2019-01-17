@@ -8,7 +8,7 @@ This is a NativeScript cross platform ZXing library for IOS and Android.
 
 ## License
 
-My code is (c)2016-2018, Master Technology.  Everything is LICENSED under the APACHE 2.0 License, including libraries, meaning you are free to include this in any type of program -- However for entities that need a support contract, changes, enhancements and/or a commercial license please contact me at [http://nativescript.tools](http://nativescript.tools).
+My code is (c)2016-2019, Master Technology.  Everything is LICENSED under the APACHE 2.0 License, including libraries, meaning you are free to include this in any type of program -- However for entities that need a support contract, changes, enhancements and/or a commercial license please contact me at [http://nativescript.tools](http://nativescript.tools).
 
 I also do contract work; so if you have a module you want built or sponsored for NativeScript (or any other software projects) feel free to contact me [nathan@master-technology.com](mailto://nathan@master-technology.com).
 
@@ -16,7 +16,7 @@ I also do contract work; so if you have a module you want built or sponsored for
 [![Patreon](https://img.shields.io/badge/Pledge-Patreon-brightgreen.svg?style=plastic)](https://www.patreon.com/NathanaelA)
 
 ## Installation 
-Same plugin works on  NativeScript 2.x - 4.x
+Same plugin works on  NativeScript 2.x - 5.x
 
 Run `tns plugin add nativescript-zxing` in your ROOT directory of your project.
 

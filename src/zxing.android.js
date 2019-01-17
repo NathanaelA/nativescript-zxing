@@ -1,5 +1,5 @@
 /*************************************************************************************
- * (c) 2016, Master Technology
+ * (c) 2016-2019, Master Technology
  *
  * Licensed under the APACHE license or contact me for a Support or Commercial License
  *
