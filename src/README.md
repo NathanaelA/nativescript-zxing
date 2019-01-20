@@ -96,3 +96,13 @@ The easiest fix if you want to use both of them is to open up where the plugin w
 
 My code will then automatically use the version of zxing that nativescript-barcodescanner has included in it.
 
+Add the following to your `package.json`s `scripts` object for a simple workflow that handles this collision automatically.  If you do not use `yarn` replace it with `npm`:
+
+```json
+  "scripts": {
+    ...
+    "android": "yarn run rm-zxing ; tns run android",
+    "rm-zxing": "rm -r node_modules/nativescript-zxing/platforms/android &>/dev/null || true"
+    ...
+```    
+
