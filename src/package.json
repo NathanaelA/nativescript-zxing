@@ -1,6 +1,6 @@
 {
   "name": "nativescript-zxing",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "description": "A Simple ZXing barcode reader/writer",
   "main": "zxing",
   "nativescript": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nathanaela/nativescript-zxing.git"
+    "url": "https://git.proplugins.org/proplugins/nativescript-zxing.git"
   },
   "keywords": [
     "NativeScript", "Barcode", "Development", "JavaScript", "Android", "iOS", "ZXing"
@@ -28,12 +28,15 @@
     "email": "nathan@master-technology.com"
   },
   "bugs": {
-    "url": "https://github.com/nathanaela/nativescript-zxing/issues"
+    "url": "https://git.proplugins.org/proplugins/nativescript-zxing/issues"
   },
   "license": {
     "type": "APACHE",
-    "url": "https://github.com/nathanaela/nativescript-zxing/blob/master/LICENSE"
+    "url": "https://git.proplugins.org/proplugins/nativescript-zxing/blob/master/LICENSE"
   },
-  "homepage": "https://github.com/nathanaela/nativescript-zxing",
+  "scripts": {
+    "postinstall": "node postinstall.js || echo \"ignore\""
+  },
+  "homepage": "https://git.proplugins.org/proplugins/nativescript-zxing",
   "readmeFilename": "README.md"
 }
